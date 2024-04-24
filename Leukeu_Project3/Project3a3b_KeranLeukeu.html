@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Keran Forms and tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="descripiton" content="Practice w/ T&F" >
+    
+    <link rel="stylesheet" href="../Leukeu_Project3_Tech272_24.html/normalize.css">
+
+</head>
+
+<style>
+    input, select, textarea, button {display: block;
+    margin-bottom: 10px;
+    width: 300px;}
+    button {background-color: chocolate;}
+    
+    #form{border:10px; background-color:beige;padding:  20px 40px 60px 40px; }
+
+    #table {background-color: purple; padding: 20px 40px 60px 40px; }
+
+    table {text-align: left;}
+    th, td {padding: 6px; width: 20%}
+
+    th {background-color: beige; text-align: center;}
+    th {border: 40px; border-radius: 50%;}
+
+    tfoot {color: white; background-color: black; text-align: center;}
+
+    td {color: aqua; text-align: right;}
+</style>
+<body>
+    <div id="wrap"></div>
+        <main>
+            <h1>Tables and Forms</h1>
+                <section id="table">
+                    <h2>Tables</h2>
+                    <table cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Age</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Grade Point</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Person 1</th>
+                                <td>32</td>
+                                <td>John</td>
+                                <td>Glenn</td>
+                                <td>3.04</td>
+                            </tr>
+                            <tr>
+                                <th>Person 2</th>
+                                <td>28</td>
+                                <td>Guss</td>
+                                <td>Grissom</td>
+                                <td>3.28</td>
+                            </tr>
+                            <tr>
+                                <th>Person 3</th>
+                                <td>18</td>
+                                <td>Keran</td>
+                                <td>Leukeu</td>
+                                <td>3.25</td>
+                            </tr>
+                        </tbody>
+                        <tfoot id="One">
+                            <tr>
+                                <td colspan="5">©2024 All Rights Reserved</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            <section id="form">
+                <h2>Forms</h2>
+                <h3>Contact us:</h3>
+                <form action="mailto:sample@sample.com" method="post" enctype="text/plain">
+                    <input type="text" name="Firstname" required autofocus placeholder="First Name *">
+                    <input type="text" name="lastname" required placeholder="Last Name *">
+                    <input type="email" name="email" required placeholder="Email *">
+                    <select name="reason">
+                        <option value="personal">I am looking to network with you.</option>
+                        <option value="school"> I would like to study with you</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
+                    <button type="send" value="send">Send</button>
+                    <input type="reset" value="Reset">
+                </form>
+            </section>
+        </main>
+</body> 
+
+
+
+
+
+
+</html>
