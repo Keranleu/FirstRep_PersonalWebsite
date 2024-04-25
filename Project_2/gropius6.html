@@ -53,6 +53,20 @@
                 padding:6px;}
                 nav a:hover, nav a:focus, nav a:active {color:white; background-color:#777;}
 
+                /* Floats */
+                .fr400{float: right; margin-bottom: 20px;}
+                .fr300{float: right; margin-left: 20px; margin-bottom: 20px; width: 100%; max-width: 300px; }
+                .fr200{float: left; margin-right: 20px; margin-bottom: 20px;}
+                .fr100{float: right; margin-left: 20px; margin-bottom: 20px;}
+                
+                .clearfix::after{
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+
+
+
  </style>
 </head> 
 <body id="top">
@@ -65,7 +79,7 @@
             </ul>
         </nav>
 
-        <figure>
+        <figure class="fr400">
             <img src="images/WalterGropius-1919x200.jpg">
 
             <figcaption>German architect Walter Gropius, founder of the Bauhaus school of architecture. Photo by Louis Held c. <time datetime="1919">1919</time>, probably in Waimar, Germany, just after the foundation of Bauhaus.</figcaption>
@@ -121,7 +135,7 @@
 
             <h4>Bauhaus</h4>
 
-            <figure>
+            <figure class="fr300">
             <img src="images/Bauhausx300.jpg">
                 <p><time datetime="1925">1925</time>&ndash;<time datetime="1926">1926</time>, Dessau, Germany, photo by Detlef Mewes</p>
             </figure>
@@ -131,7 +145,7 @@
             <p>The entire complex is rendered and painted mainly in light tones, creating an attractive contrast to the window frames, which are dark. For the interior, the junior master of the mural workshop, Hinnerk Scheper, designed a detailed color plan that, by differentiating between supporting and masking elements through the use of color, aimed to accentuate the construction of the building.</p>
             <small>(<a href="https://www.bauhaus-dessau.de/en/venues/bauhaus-building/" target="_blank">https://www.bauhaus-dessau.de/en/venues/bauhaus-building/</a>, <time datetime="2016-02-01">2/1/2016</time>)</small>
 
-        <figure>
+        <figure class="fr200">
             <h4>Walter Gropius House</h4>
         
             <img src="images/Walter_Gropius_photo_Gropius_house_Lincoln_MAx300.jpg">
@@ -146,7 +160,7 @@
 
             <h4>MetLife Building</h4>
 
-        <figure>
+        <figure class="fr100">
             <img src="images/MetLifeBldgNY.jpg" style="width: 200px; ">
             <p><time datetime="1960">1960</time>&ndash;<time datetime="1963">1963</time>, New York, NY. Photo by <a href="https://en.wikipedia.org/wiki/User:Postdlf" target="_blank">https://en.wikipedia.org/wiki/User:Postdlf</a>, <time datetime="2005-10-03">2005-10-03</time></p>
         </figure>
@@ -161,4 +175,5 @@
 </div><!--Closes Wrap-->
 </body> 
 </html>
+
 
