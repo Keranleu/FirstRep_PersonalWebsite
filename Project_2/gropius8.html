@@ -6,68 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="descripiton" content="Walter Gropius was an architect who founded the Bauhaus, a revolutionary design school in Germany from 1919&ndash;1932."/>
     <link rel="stylesheet" href="css/normalize.css">
-    <style> 
-   
-                /* BOX-SIZING */
-                html{
-                 box-sizing:border-box;
-                }
-                *, *:before, *:after {
-                box-sizing:inherit;
-                }
 
-                /* STRUCTURE */
-                body {background-color: ;}
-                #wrap {background-color:#ddd; 
-                width:100%; max-width:800px;
-                margin:0 auto 0 auto;}
-                header {background-color:#444; color:white;} 
-                footer {background-color: #444; color:white;} header, section, footer {padding: 20px 60px;} 
-                figure {margin:0;}
+<style>
+    /* BOX-SIZING */
+    html {
+        box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+    
+    /* STRUCTURE */
+    body {
+        background-color: ;
+    }
+    
+    .wrap {
+        background-color: #ddd;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    header {
+        background-color: #444;
+        color: white;
+        padding: 20px;
+    }
+    
+    footer {
+        background-color: #444;
+        color: white;
+        padding: 20px;
+    }
+    
+    /* TYPOGRAPHY */
+    body {
+        font-family: arial, helvetica, sans-serif;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    figcaption {
+        font-style: italic;
+        font-size: 14px;
+    }
+    
+    ul {
+        padding-left: 16px;
+    }
+    
+    li {
+        margin-bottom: 8px;
+    }
+    
+    /* NAV TYPE */
+    nav ul {
+        padding-left: 0;
+        display: flex;
+        list-style: none;
+    }
+    
+    nav li {
+        margin-right: 6px;
+    }
+    
+    /* LINKS */
+    a:link,
+    a:visited {
+        color: #aaa;
+        text-decoration: none;
+    }
+    
+    a:hover,
+    a:focus,
+    a:active {
+        color: aqua;
+    }
+    
+    section a:link,
+    section a:visited {
+        color: #666;
+    }
+    
+    section a:hover,
+    section a:focus,
+    section a:active {
+        color: red;
+    }
+    
+    nav a:link,
+    nav a:visited {
+        color: white;
+        background-color: red;
+        padding: 6px;
+    }
+    
+    nav a:hover,
+    nav a:focus,
+    nav a:active {
+        color: white;
+        background-color: #777;
+    }
+    
+    /* Flexbox */
+    .wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fr400,
+    .fr300,
+    .fr200,
+    .fr100 {
+        margin-bottom: 20px;
+    }
+    
+    .fr400 {
+        align-self: flex-end;
+    }
+    
+    .fr300 {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .fr100 {
+        align-self: flex-end;
+        margin-left: 20px;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
-                /*TYPOGRAPHY */
-                body {font-family:arial, helvetica, sans-serif;} 
-                h1 {font-size:36px;}
-                figcaption {font-style:italic; font-size: 14px;} 
-                ul {padding-left:16px;}
-                li {margin-bottom:8px;}
+    .programs p {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: aliceblue; 
+        padding: 10px;
+        border-radius: 6px;
 
-                /* NAV TYPE */
-                nav ul {padding-left:0;}
-                nav li {list-style:none; display:inline-block; margin-right:6px;}
-
-                /* LINKS */
-                a:link {color:#aaa; text-decoration:none;} 
-                a:visited {color:#aaa;} 
-                a:hover {color:aqua;} 
-                a:focus {color:aqua;} 
-                a:active {color:aqua;}
-
-                section a:link {color: #666;} 
-                section a:visited {color:#666;} 
-                section a:hover {color:red;}
-                section a:focus {color:red;}
-                section a:active {color:red;}
-
-                nav a:link, nav a:visited {color:white; background-color:red;
-                padding:6px;}
-                nav a:hover, nav a:focus, nav a:active {color:white; background-color:#777;}
-
-                /* Floats */
-                .fr400{float: right; margin-bottom: 20px;}
-                .fr300{float: right; margin-left: 20px; margin-bottom: 20px; width: 100%; max-width: 300px; }
-                .fr200{float: left; margin-right: 20px; margin-bottom: 20px;}
-                .fr100{float: right; margin-left: 20px; margin-bottom: 20px;}
-                
-                .clearfix::after{
-                    content: "";
-                    clear: both;
-                    display: table;
-                }
-
-
-
- </style>
+    }
+</style>
+    
 </head> 
 <body id="top">
     <div class="wrap">
@@ -173,6 +260,16 @@
         </strong>
         </footer>
 </div><!--Closes Wrap-->
+<div class="flex-container yellow programs">
+    <p>Illustrator</p>
+    <p>InDesign</p>
+    <p>Photoshop</p>
+    <p>MS Word</p>
+    <p>Excel</p>
+    <p>Premier</p>
+</div>
+
+
 </body> 
 </html>
 
