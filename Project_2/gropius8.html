@@ -118,31 +118,41 @@
         flex-direction: column;
     }
     
-    .fr400,
-    .fr300,
-    .fr200,
-    .fr100 {
-        margin-bottom: 20px;
-    }
+.fr400,
+.fr300,
+.fr200,
+.fr100 {
+    margin-bottom: 20px;
+}
+
+.fr400 {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    float: right;
+    clear: both; /* Added clear to clear floats */
+}
+
+.fr300 {
+    width: 100%;
+    max-width: 300px;
+    float: left;
+}
+
+.fr200 {
+    float: left;
+}
+
+.fr100 {
+    align-self: flex-end;
+    margin-left: 20px;
+    float: none; /* Removed float:none */
+}
+
     
-    .fr400 {
-        align-self: flex-end;
-    }
-    
-    .fr300 {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .fr100 {
-        align-self: flex-end;
-        margin-left: 20px;
-    }
-    
-    .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
+ .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
     }
 
 /* Flexbox */
