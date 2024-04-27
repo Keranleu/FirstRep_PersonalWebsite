@@ -2,81 +2,151 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Keran Forms and tables</title>
+    <title>Keran Forms and Tables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="descripiton" content="Practice w/ T&F" >
+    <meta name="description" content="Practice with Tables and Forms">
     
-    <link rel="stylesheet" href="../Leukeu_Project3_Tech272_24.html/normalize.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
-        input, select, textarea, button {display: block;
-        margin-bottom: 10px;
-        width: 300px;}
-        button {background-color: chocolate;}
-        
-        #form{border:10px; background-color:beige;padding:  20px 40px 60px 40px; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-        #table {background-color: purple; padding: 20px 40px 60px 40px; }
+        #wrap {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
 
-        table {text-align: left;}
-        th, td {padding: 6px; width: 20%}
+        main {
+            padding: 20px;
+        }
 
-        th {background-color: beige; text-align: center;}
-        th {border: 40px; border-radius: 50%;}
+        h1, h2, h3 {
+            color: #555;
+        }
 
-        tfoot {color: white; background-color: black; text-align: center;}
+        section {
+            margin-bottom: 40px;
+        }
 
-        td {color: aqua; text-align: right;}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            color: #555;
+        }
+
+        tfoot {
+            background-color: #f5f5f5;
+            font-weight: bold;
+            color: #555;
+        }
+
+        form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input, select, textarea, button {
+            display: block;
+            margin-bottom: 15px;
+            width: calc(100% - 30px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #da190b;
+        }
     </style>
 </head>
-
 <body>
-    <div id="wrap"></div>
+    <div id="wrap">
         <main>
             <h1>Tables and Forms</h1>
-                <section id="table">
-                    <h2>Tables</h2>
-                    <table cellpadding="0" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>&nbsp;</th>
-                                <th>Age</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Grade Point</th>
-                            </tr>
-
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Person 1</th>
-                                <td>32</td>
-                                <td>John</td>
-                                <td>Glenn</td>
-                                <td>3.04</td>
-                            </tr>
-                            <tr>
-                                <th>Person 2</th>
-                                <td>28</td>
-                                <td>Guss</td>
-                                <td>Grissom</td>
-                                <td>3.28</td>
-                            </tr>
-                            <tr>
-                                <th>Person 3</th>
-                                <td>18</td>
-                                <td>Keran</td>
-                                <td>Leukeu</td>
-                                <td>3.25</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="5">©2024 All Rights Reserved</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </section>
+            <section id="table">
+                <h2>Tables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Age</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Grade Point</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Person 1</th>
+                            <td>32</td>
+                            <td>John</td>
+                            <td>Glenn</td>
+                            <td>3.04</td>
+                        </tr>
+                        <tr>
+                            <th>Person 2</th>
+                            <td>28</td>
+                            <td>Guss</td>
+                            <td>Grissom</td>
+                            <td>3.28</td>
+                        </tr>
+                        <tr>
+                            <th>Person 3</th>
+                            <td>18</td>
+                            <td>Keran</td>
+                            <td>Leukeu</td>
+                            <td>3.25</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">©2024 All Rights Reserved</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
             <section id="form">
                 <h2>Forms</h2>
                 <h3>Contact us:</h3>
@@ -86,20 +156,15 @@
                     <input type="email" name="email" required placeholder="Email *">
                     <select name="reason">
                         <option value="personal">I am looking to network with you.</option>
-                        <option value="school"> I would like to study with you</option>
+                        <option value="school">I would like to study with you</option>
                         <option value="Other">Other</option>
                     </select>
                     <textarea name="comment" cols="45" rows="4" placeholder="Comments"></textarea>
-                    <button type="send" value="send">Send</button>
+                    <button type="submit" value="send">Send</button>
                     <input type="reset" value="Reset">
                 </form>
             </section>
         </main>
-</body> 
-
-
-
-
-
-
+    </div>
+</body>
 </html>
